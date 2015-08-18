@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>love_my_eyes</title>
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        body{
+            background:#000000;
+        }
+    </style>
+</head>
+<body>
+   <a href="love_eyes.html" id="link">其他图</a>
+   <img src="images/huanjie_pilao.png" style="display: block;"/>
+</body>
+</html>
+<script>
+    $(function(){
+        var winWidth=$(window).width();
+        var winHeight=$(window).height();
+        var linkHeight=$('#link').height();
+        var imgHeight=winHeight-linkHeight;
+        $("img").attr('style','display:block;max-width:'+winWidth+'px;max-height:'+imgHeight+'px;margin:auto;');
+    });
+</script>
