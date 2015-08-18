@@ -11,15 +11,15 @@
     </style>
 </head>
 <body>
-   <a href="love_eyes.html" id="link">其他图</a>
-   <img src="images/huanjie_pilao.png" style="display: block;"/>
+    <a href="index.html" id="linkIndex">首页</a>
+    <img src="images/0.gif" style="display: block;"/>
 </body>
 </html>
 <script>
     $(function(){
         var winWidth=$(window).width();
         var winHeight=$(window).height();
-        var linkHeight=$('#link').height();
+        var linkHeight=$('#linkIndex').height();
         var imgHeight=winHeight-linkHeight;
         $("img").attr('style','display:block;max-width:'+winWidth+'px;max-height:'+imgHeight+'px;margin:auto;');
     });
